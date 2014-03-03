@@ -1,4 +1,7 @@
-This is the repo for the [montagejs.org](http://montagejs.org) website.
+montagestudio.com
+=================
+
+This is the repo for the [montagestudio.com](http://montagestudio.com) site.
 
 ## Contributing
 If you find any bugs or want to contribute, feel free to create an issue or send a pull request.
@@ -14,7 +17,7 @@ First you need Ruby and RubyGems, see [details](http://jekyllrb.com/docs/install
 
     gem install jekyll
 
-Then `cd` into your montagejs.org directory and run:
+Then `cd` into your montagestudio.com directory and run:
 
     jekyll serve
 
