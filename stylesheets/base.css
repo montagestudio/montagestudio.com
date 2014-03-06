@@ -156,7 +156,7 @@ hr {
 .nav {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 80px; /* Space for logo */
+    margin-left: 140px; /* Space for logo */
     padding-right: 40px; /* Space for fork */
     font-size: 0; /* Removes inline-block gap */
 }
@@ -689,7 +689,7 @@ hr {
 
     .header {
         position: relative;
-        padding: 0;
+        padding: 0.4em 0;
         font-size: 1.5em;
     }
 
