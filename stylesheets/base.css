@@ -249,48 +249,6 @@ hr {
 .nav-toggleLabel--main:before { content: "Menu"; }
 
 
-/* Pushed (background is dark) ----------------------------------------- */
-
-.pushed {
-    padding: 50px;
-    color: hsl(0, 0%, 50%);
-    border-top: 1px solid hsl(0,0%,0%);
-    border-bottom: 1px solid hsl(0,0%,0%);
-    background-color: hsl(0,0%,26%);
-    background-image: -webkit-radial-gradient(center 30%, hsla(0,0%,20%,.5), hsla(0,0%,0%,.5) ), url(../images/noise.png);
-    background-image:    -moz-radial-gradient(center 30%, hsla(0,0%,20%,.5), hsla(0,0%,0%,.5) ), url(../images/noise.png);
-    background-image:     -ms-radial-gradient(center 30%, hsla(0,0%,20%,.5), hsla(0,0%,0%,.5) ), url(../images/noise.png);
-    background-image:      -o-radial-gradient(center 30%, hsla(0,0%,20%,.5), hsla(0,0%,0%,.5) ), url(../images/noise.png);
-    background-image:         radial-gradient(center 30%, hsla(0,0%,20%,.5), hsla(0,0%,0%,.5) ), url(../images/noise.png);
-}
-
-.pushed .wrapper {
-    text-shadow: none;
-}
-
-.pushed a {
-    color: hsl(196,100%,50%);
-}
-
-.pushed a:hover {
-    color: hsl(196,100%,60%);
-}
-
-.pushed a:active {
-    color: hsl(196,100%,40%);
-}
-
-.gallery.pushed .title {
-    color: hsl(0,0%,90%);
-    text-shadow: 0px 1px 0px hsl(0,0%,0%);
-}
-
-.gallery.pushed .wrapper {
-    color: hsl(0,0%,50%);
-    text-shadow: none;
-}
-
-
 
 /* Bar (background is light grey) ----------------------------------------- */
 
@@ -328,6 +286,15 @@ hr {
 .col-1-3 { width: 30.666%; }
 .col-2-3 { width: 65.333%; }
 
+.text-col-2 {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 1.5em;
+       -moz-column-gap: 1.5em;
+            column-gap: 1.5em;
+}
+
 @media all and (max-width: 700px) {
     .cols > .col {
         display: block;
@@ -338,6 +305,12 @@ hr {
     .col-2-3  {
         width: 100%;
         margin-right: 0;
+    }
+
+    .text-col-2 {
+        -webkit-column-count: auto;
+           -moz-column-count: auto;
+                column-count: auto;
     }
 }
 
@@ -467,77 +440,6 @@ hr {
 
 .img--100 {
     width: 100%;
-}
-
-
-/* Apps (gallery) ----------------------------------------- */
-
-.gallery-list {
-    list-style: none;
-    margin: 40px 0 0 0;
-    padding: 0;
-    font-size: 0;
-    text-align: center;
-}
-
-.gallery-item {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
-}
-
-.gallery-thumb {
-    position: relative;
-    display: inline-block;
-    border-radius: 5px;
-    border: 3px solid hsl(0,0%,100%);
-    background-color: hsl(0,0%,95%);
-    box-shadow: 0px 12px 20px -12px hsla(0,0%,0%,1);
-}
-.gallery-thumb:hover {
-    border-color: hsl(200,100%,50%);
-}
-.gallery-thumb:active {
-    border-color: hsl(200,100%,30%);
-}
-
-.gallery-thumb:before {
-    content: "";
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    border-radius: 3px;
-    box-shadow: inset 0px 0px 4px hsla(0,0%,0%,.2);
-    background-image: -webkit-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:    -moz-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:     -ms-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:      -o-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:         linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-}
-.gallery-img {
-    display: block;
-    max-width: 180px;
-    max-height: 180px;
-    border-radius: 3px;
-}
-
-.gallery-description {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-@media all and (max-width: 700px) {
-    .gallery-item {
-        display: block;
-        margin: 0;
-    }
-    .gallery-img {
-        max-width: 100%;
-        max-height: 200px;
-    }
-    .gallery-description {
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
 }
 
 

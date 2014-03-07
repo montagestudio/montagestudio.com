@@ -366,28 +366,63 @@ code[data-lang]:after {
 
 
 
-/* Apps page ----------------------------------------- */
+/* Gallery ----------------------------------------- */
 
-.apps-intro {
-    border-bottom: none;
-    padding-bottom: 0;
+/* Pushed (background is dark) ----------------------------------------- */
+
+.gallery {
+    padding: 50px;
+    color: hsl(0, 0%, 50%);
+    background: hsl(0, 0%, 13%) url(../images/bg-dark.jpg) no-repeat top center;
+    background-size: 1600px auto;
 }
 
-.case:nth-child(3) {
-    border-top: none;
+.gallery .wrapper {
+    color: hsl(0,0%,50%);
+    text-shadow: none;
 }
 
-.case .title {
-    margin-bottom: 20px;
+.gallery a {
+    color: hsl(196,100%,50%);
 }
 
-.case .case-optimized {
-    font-size: .7em;
-    font-weight: normal;
-    color: hsl(0,0%,60%);
+.gallery a:hover {
+    color: hsl(196,100%,60%);
 }
 
-.case-thumb {
+.gallery a:active {
+    color: hsl(196,100%,40%);
+}
+
+.gallery-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.gallery-item-source {
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 1.5;
+    color: hsl(0,0%,70%);
+    font-size: 12px;
+    border-radius: 20px;
+    background: hsl(0,0%,30%);
+}
+
+.gallery-item-source:hover {
+    background: hsl(200,100%,25%);
+}
+
+.gallery-thumb {
     position: relative;
     display: inline-block;
     border-radius: 5px;
@@ -395,14 +430,14 @@ code[data-lang]:after {
     background-color: hsl(0,0%,95%);
     box-shadow: 0px 12px 20px -12px hsla(0,0%,0%,1);
 }
-.case-thumb:hover {
+.gallery-thumb:hover {
     border-color: hsl(200,100%,50%);
 }
-.case-thumb:active {
+.gallery-thumb:active {
     border-color: hsl(200,100%,30%);
 }
 
-.case-thumb:before {
+.gallery-thumb:before {
     content: "";
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -414,50 +449,39 @@ code[data-lang]:after {
     background-image:      -o-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
     background-image:         linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
 }
-.case-img {
+.gallery-img {
     display: block;
-    width: 100%;
-    max-width: 480px;
+    max-width: 180px;
+    max-height: 180px;
     border-radius: 3px;
 }
 
-.case-icon {
-    float: left;
-    position: relative;
-    width: 48px;
-    top: 6px;
-    margin: 0 20px 20px 0;
+.gallery-description {
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.case p {
-    margin-top: 0;
-}
-
-.case-launch {
-    margin-left: 0;
-}
-
-.gallery .note {
+.gallery-note {
     max-width: 900px;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 1.5;
 }
 
-.gallery .gallery-item-source {
-    display: inline-block;
-    padding: 0 8px;
-    line-height: 1.5;
-    color: hsl(0,0%,70%);
-    font-size: 12px;
-    border-radius: 20px;
-    background: hsl(0,0%,30%);
+@media all and (max-width: 700px) {
+    .gallery-item {
+        display: block;
+        margin: 0;
+    }
+    .gallery-img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+    .gallery-description {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
 }
-
-.gallery .gallery-item-source:hover {
-    background: hsl(200,100%,25%);
-}
-
 
 
 
