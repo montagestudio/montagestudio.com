@@ -4,14 +4,10 @@
 /* Teaser ------------------------------------------- */
 
 .hero {
-    background: hsl(0, 0%, 13%) url(../images/teaser-bg.jpg) no-repeat center -86px;
-    background-size: 1500px auto;
+    background: hsl(0, 0%, 13%) url(../images/bg-dark.jpg) no-repeat top center;
+    background-size: 1600px auto;
     border-top: none;
     font-weight: 300;
-}
-
-.hero--home {
-   background-position: center 24%;
 }
 
 .hero .wrapper {

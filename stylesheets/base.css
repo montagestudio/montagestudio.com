@@ -647,19 +647,19 @@ hr {
     }
 }
 
-@media all and (min-width: 661px) {
+@media all and (min-width: 701px) {
 
     .footer {
-        background: #181724 url(../images/footer-bg.jpg) no-repeat center;
-        background-size: cover;
+        background: #181724 url(../images/bg-footer.jpg) no-repeat top center;
+        background-size: 1100px auto;
     }
 
 }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 700px) {
 
     .footer {
-        background: #181724 url(../images/footer-bg--vertical.jpg) no-repeat top center;
+        background: #181724 url(../images/bg-footer--vertical.jpg) no-repeat top center;
         background-size: 100% auto;
     }
 
