@@ -493,36 +493,43 @@ hr {
 
 .sitemap li {
     display: inline-block;
-    margin: 0 2.5em;
+    margin: 0 2em;
     vertical-align: top;
     text-align: left;
 }
 
 .sitemap a {
     display: block;
-    color: hsl(0, 100%, 100%);
-}
-
-.sitemap a:hover {
     color: hsla(0, 100%, 100%, 0.6);
 }
 
+.sitemap a:hover {
+    color: hsla(0, 100%, 100%, 1);
+}
+
 .sitemap a:active {
-    color: hsla(0, 100%, 100%, 0.4);
+    color: hsla(0, 100%, 100%, 0.6);
 }
 
 .sitemap .sitemap-main {
-    margin-bottom: .4em;
-    font-weight: bold;
-    border-bottom: 1px dotted hsla(0, 100%, 100%, 0.2);
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.sitemap .sitemap-main:hover {
+    color: hsla(0, 100%, 100%, 0.6);
+}
+
+.sitemap .sitemap-main:active {
+    color: hsla(0, 100%, 100%, 0.4);
 }
 
 .footer-logo {
     position: absolute;
     width: 170px;
     left: 0;
-    top: 50%;
-    margin-top: -50px;
+    top: 5px;
 }
 
 .footer-end {
