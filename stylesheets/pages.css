@@ -368,67 +368,43 @@ code[data-lang]:after {
 
 /* Gallery ----------------------------------------- */
 
-/* Pushed (background is dark) ----------------------------------------- */
-
 .gallery {
-    padding: 50px;
-    color: hsl(0, 0%, 50%);
-    background: hsl(0, 0%, 13%) url(../images/bg-dark.jpg) no-repeat top center;
-    background-size: 1600px auto;
 }
 
 .gallery .wrapper {
-    color: hsl(0,0%,50%);
     text-shadow: none;
 }
 
-.gallery a {
-    color: hsl(196,100%,50%);
-}
-
-.gallery a:hover {
-    color: hsl(196,100%,60%);
-}
-
-.gallery a:active {
-    color: hsl(196,100%,40%);
+.gallery-header {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: hsl(0, 0%, 60%);
 }
 
 .gallery-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 0;
-    text-align: center;
+    font-size: 14px;
 }
 
 .gallery-item {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
+    display: block;
+    margin: 4em auto;
+    max-width: 340px;
 }
 
-.gallery-item-source {
-    display: inline-block;
-    padding: 0 8px;
-    line-height: 1.5;
-    color: hsl(0,0%,70%);
-    font-size: 12px;
-    border-radius: 20px;
-    background: hsl(0,0%,30%);
-}
-
-.gallery-item-source:hover {
-    background: hsl(200,100%,25%);
-}
+/* Gallery Thumbs */
 
 .gallery-thumb {
-    position: relative;
     display: inline-block;
-    border-radius: 5px;
-    border: 3px solid hsl(0,0%,100%);
-    background-color: hsl(0,0%,95%);
-    box-shadow: 0px 12px 20px -12px hsla(0,0%,0%,1);
+    position: relative;
+    border-radius: 6px;
+    border: 3px solid hsl(0, 100%, 100%);
+    box-shadow: 0px 12px 20px -12px hsla(0,0%,0%,0.3);
 }
 .gallery-thumb:hover {
     border-color: hsl(200,100%,50%);
@@ -442,24 +418,75 @@ code[data-lang]:after {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     border-radius: 3px;
-    box-shadow: inset 0px 0px 4px hsla(0,0%,0%,.2);
-    background-image: -webkit-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:    -moz-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:     -ms-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:      -o-linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
-    background-image:         linear-gradient(-45deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.2) 50%, hsla(0,0%,100%,0) 50% );
+    background-image: linear-gradient(135deg, hsla(0,0%,100%,0.3), hsla(0,0%,100%,0.15) 33%, hsla(0,0%,100%,0) 33% );
 }
+
 .gallery-img {
     display: block;
-    max-width: 180px;
-    max-height: 180px;
+    width: 100%;
+    max-width: 320px;
     border-radius: 3px;
 }
 
-.gallery-description {
-    margin-top: 10px;
-    font-size: 14px;
+
+
+/* Gallery Info */
+
+.gallery-info {
+    color: hsl(0,0%,50%);
+    
 }
+
+.gallery-title {
+    font-size: 1.4em;
+    margin-bottom: 0;
+    color: rgb(50, 50, 50);
+}
+
+.gallery-support {
+    color: hsl(0,0%,70%);
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-left: 0.4em;
+    line-height: 1;
+}
+
+.gallery-description {
+    
+}
+
+.gallery-buttons {
+    margin-top: 1.5em;
+}
+
+.gallery-button {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 0 1em;
+    line-height: 2;
+    color: hsl(210, 100%, 60%);
+    border-radius: 2em;
+    border: 1px solid;
+    background: transparent;
+    transition: background-color 0.2s;
+}
+
+.gallery-button:hover {
+    color: #fff;
+    background: hsl(210, 100%, 70%);
+    transition-duration: 0;
+}
+
+.gallery-button:active {
+    background: hsl(210, 100%, 60%);
+}
+
+.gallery-button--source {
+    color: hsl(0,0%,66%);
+}
+
+
+/* Gallery Note */
 
 .gallery-note {
     max-width: 900px;
@@ -468,19 +495,48 @@ code[data-lang]:after {
     line-height: 1.5;
 }
 
-@media all and (max-width: 700px) {
+/* Responsive Gallery ----------------------------------------- */
+
+@media all and (min-width: 701px) {
+    
+    .gallery .wrapper {
+        font-size: 16px;
+    }
+
+    .gallery-header {
+        font-size: 2em;
+        margin: 0 4em;
+    }
+    
     .gallery-item {
-        display: block;
-        margin: 0;
+        max-width: none;
+        margin: 6em 0;
+        text-align: right;
     }
+    
+    .gallery-thumb {
+        max-width: 40%;
+        vertical-align: top;
+    }
+    
+    .gallery-info {
+        display: inline-block;
+        width: 42.5%;
+        margin: 0 6%;
+        vertical-align: top;
+        text-align: left;
+    
+}
+    
+}
+
+@media all and (min-width: 881px) {
+
     .gallery-img {
-        max-width: 100%;
-        max-height: 200px;
+        max-height: 300px; 
+        width: auto; 
     }
-    .gallery-description {
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
+    
 }
 
 
