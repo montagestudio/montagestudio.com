@@ -110,7 +110,7 @@ hr {
     display: inline-block;
     vertical-align: middle;
     height: 40px;
-    background-image: url(/images/logo-header.png);
+    background-image: url(../images/logo-header.png);
     color: transparent;
     text-shadow: none;
     width: 80px;
