@@ -481,7 +481,7 @@ code[data-lang]:after {
     background: hsl(210, 100%, 60%);
 }
 
-.gallery-button--source {
+.gallery-button--secondary {
     color: hsl(0,0%,66%);
 }
 
