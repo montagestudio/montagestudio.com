@@ -166,17 +166,18 @@ hr {
     font-size: 18px;
     margin: 0;
     padding: 20px;
-    color: hsl(0,0%,60%);
+    color: hsl(0,0%,70%);
 }
 
 .nav-item:hover {
-    color: hsl(0,0%,40%);
-    background-color: hsla(0,0%,0%,.05);
+    color: hsl(0,0%,100%);
+    background-color: hsla(0, 100%, 100%, 0.06);
 }
 
 .nav-item:active,
 .nav-item.active {
     color: #fff;
+    background-color: hsla(0,0%,0%,0.2);
 }
 
 .nav-item--fork {
