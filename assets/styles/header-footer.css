@@ -25,7 +25,7 @@
     background-image: url(http://staging.montagestudio.com/assets/images/logo-header.png);
     color: transparent;
     text-shadow: none;
-    width: 80px;
+    width: 140px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -67,7 +67,7 @@
 
 .nav {
     display: block;
-    margin: 0 174px 0 100px; /* These magic numbers depend on logo and teaser widths */
+    margin: 0 174px 0 150px; /* These magic numbers depend on logo and teaser widths */
     font-size: 0; /* Removes inline-block gap */
     text-align: center;
 }
@@ -127,7 +127,7 @@
     line-height: 48px;
     font-size: 1.2em;
     color: #fff;
-    text-align: center;
+    text-align: right;
     -webkit-tap-highlight-color: transparent;
     background:  url(http://staging.montagestudio.com/assets/images/toggle-icons.svg) no-repeat right top;
     background-size: 48px auto;
@@ -299,7 +299,7 @@
 
 /* Responsive Header ----------------------------------------- */
 
-@media all and (max-width: 880px) { /* width needs to be manually adjusted if nav changes */
+@media all and (max-width: 920px) { /* width needs to be manually adjusted if nav changes */
 
     body > section:first-of-type {
         margin-top: 0px;
@@ -316,11 +316,10 @@
     }
 
     .header .logo {
-        height: 30px;
 
         position: absolute;
-        top: 8px;
-        left: 8px;
+        top: 5px;
+        left: 15px;
 }
 
     .nav-toggleLabel--main {
