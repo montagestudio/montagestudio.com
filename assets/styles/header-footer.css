@@ -78,6 +78,7 @@
     margin: 0;
     padding: 20px;
     color: hsla(0, 0%, 70%, 1);
+    text-decoration: none;
 }
 
 .nav-item:hover {
@@ -189,6 +190,7 @@
 }
 
 .footer .wrapper {
+    position: relative;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -213,6 +215,7 @@
 .sitemap a {
     display: block;
     color: hsla(0, 100%, 100%, 0.6);
+    text-decoration: none;
 }
 
 .sitemap a:hover {
@@ -240,8 +243,11 @@
 .footer-logo {
     position: absolute;
     width: 170px;
+    height: 100px;
     left: 0;
     top: 5px;
+    background: url(http://staging.montagestudio.com/assets/images/logo-footer.png) no-repeat left top;
+    background-size: 100% auto;
 }
 
 .footer-end {
