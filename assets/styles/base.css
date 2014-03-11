@@ -88,34 +88,51 @@ section {
     line-height: 1.5;
 }
 
-/* Subnav ----------------------------------------- */
 
-.subnav {
-    position: relative;
+/* Page ----------------------------------------- */
+
+.page {
+    background: url(../images/bg-light.jpg) no-repeat center top;
+    background-size: 100% auto;
+}
+
+
+
+/* Intro ----------------------------------------- */
+
+.intro .title-x {
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1em;
-    font-size: 15px;
-    background: rgba(255, 255, 255, 0.85);
+    margin: 0 0 0.3em 0;
 }
 
-.subnav a {
-    color: #8b8a8a;
-    margin: 0 0.5em;
+.intro,
+.intro .cols > .col {
+    font-size: 16px; /* TODO: refactor */
 }
 
-.subnav a:hover {
-    color: hsl(0, 0%, 70%);
+
+/* Content ----------------------------------------- */
+
+.content,
+.content .cols > .col {
+    font-size: 14px; /* TODO: refactor */
 }
 
-.subnav a:active,
-.subnav a.active {
-    color: hsl(0, 0%, 30%);
+.content {
+    margin: 0 8%;
 }
 
+.content-section {
+    margin-bottom: 4em;
+}
+
+@media all and (max-width: 920px) {
+    
+    .content {
+        margin: 0;
+    }
+
+}
 
 
 

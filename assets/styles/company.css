@@ -11,29 +11,6 @@
     padding: 2em;
 }
 
-.company .intro,
-.company .intro .cols > .col {
-    font-size: 16px;
-}
-
-.company .intro .title-x {
-    text-align: center;
-    margin: 0 0 0.3em 0;
-}
-
-.company .content {
-    margin: 0 8%;
-}
-
-.company .content,
-.company .content .cols > .col {
-    font-size: 14px;
-}
-
-.company .content-section {
-    margin-bottom: 4em;
-}
-
 .company-avatar {
     width: 140px;
     border-radius: 10px;
@@ -66,10 +43,6 @@
     
     .company .wrapper {
         padding: 1.5em;
-    }
-    
-    .company .content {
-        margin: 0;
     }
 
     .company .founder {
