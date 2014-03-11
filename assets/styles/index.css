@@ -1,7 +1,7 @@
 /* These Styles only get used on the index page only */
 
 
-/* Teaser ------------------------------------------- */
+/* Hero ------------------------------------------- */
 
 .hero {
     background: hsl(0, 0%, 13%) url(../images/bg-dark.jpg) no-repeat center center;
@@ -18,44 +18,199 @@
 }
 
 .hero-title {
-    font-size: 3em;
+    margin-top: 0;
+    font-size: 2.4em;
     line-height: 1.2;
     font-weight: 300;
 }
 
 .hero-description {
     margin-top: 0;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 
-/* Why ------------------------------------------- */
+/* Product ------------------------------------------- */
 
-.why {
-    background-color: #F6F5F4;
+.home-desktop {
+    width: 100%;
+    max-width: 800px;
 }
 
-.why img {
-    max-width: 100%;
+.home-list {
+    margin-bottom: 2em;
 }
+
+.home-phone {
+    display: block;
+    width: 150px;
+}
+
+.home-info {
+    margin-bottom: 2em;
+}
+
+.home-info .button--action {
+    margin: 0.6em 0;
+}
+
+.home-tablet {
+    max-width: 440px;
+    width: 100%;
+}
+
 
 
 /* Responsive ----------------------------------------- */
 
-@media all and (min-width: 881px) {
-
-    .hero .wrapper {
-        text-align: center;
-    }
+@media all and (min-width: 700px) {
 
     .hero-title {
+        max-width: 360px;
     }
 
     .hero-description {
-        display: inline-block;
-        width: 70%;
+        max-width: 360px;
+    }
+    
+    .devices .wrapper { 
+        height: 1100px;
+    }
+    
+    
+    .home-desktop {
+        position: absolute;
+        top: -90px;
+        right: -142px;
+    }
+    
+    .home-list {
+        /* position: absolute; */
+        top: 100px;
+        left: 200px;
+    }
+    
+    .home-phone {
+        position: relative;
+        top: 10px;
+    }
+    
+    .home-info {
+        /* position: absolute; */
+        top: 317px;
+        left: 510px;
+    }
+    
+    .home-tablet {
+        position: relative; 
+        /* top: 340px; */ 
+    
+        left: 160px;
+} 
 
-        text-align: left;
 }
+
+
+
+@media all and (min-width: 920px) {
+
+    .hero-title {
+        max-width: 360px;
+    }
+
+    .hero-description {
+        max-width: 360px;
+    }
+    
+    .devices .wrapper { 
+        height: 690px;
+    }
+    
+    
+    .home-desktop {
+        position: absolute;
+        top: -320px;
+        right: -182px;
+    }
+    
+    .home-list {
+        position: absolute;
+        top: 240px;
+        left: 0;
+    }
+    
+    .home-phone {
+        position: absolute;
+        top: -90px;
+    
+        left: 90px;
+}
+    
+    .home-info {
+        position: absolute;
+        top: 447px;
+        left: 0px;
+    
+        width: 360px;
+}
+    
+    .home-tablet {
+        position: absolute; 
+        top: 320px; 
+    
+        left: 400px;
+    } 
+
+}
+
+
+
+@media all and (min-width: 1040px) {
+
+    .hero-title {
+        max-width: 360px;
+    }
+
+    .hero-description {
+        max-width: 360px;
+    }
+    
+    .devices .wrapper { 
+        height: 700px;
+    }
+    
+    
+    .home-desktop {
+        position: absolute;
+        top: -410px;
+        right: -102px;
+    }
+    
+    .home-list {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+    }
+    
+    .home-phone {
+        position: absolute;
+        top: -91px;
+    
+        left: 0;
+}
+    
+    .home-info {
+        position: absolute;
+        top: 317px;
+        left: 510px;
+    }
+    
+    .home-tablet {
+        position: absolute; 
+        top: 340px; 
+        left: 0;
+    }
+    
+    
 
 }
