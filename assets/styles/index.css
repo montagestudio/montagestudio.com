@@ -4,8 +4,8 @@
 /* Teaser ------------------------------------------- */
 
 .hero {
-    background: hsl(0, 0%, 13%) url(../images/bg-dark.jpg) no-repeat top center;
-    background-size: 1600px auto;
+    background: hsl(0, 0%, 13%) url(../images/bg-dark.jpg) no-repeat center center;
+    background-size: auto 100%;
     border-top: none;
     font-weight: 300;
 }

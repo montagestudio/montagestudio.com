@@ -306,7 +306,7 @@
 
     .footer {
         background: #181724 url(http://staging.montagestudio.com/assets/images/bg-footer.jpg) no-repeat top center;
-        background-size: 1100px auto;
+        background-size: auto 100%;
     }
 
 }
