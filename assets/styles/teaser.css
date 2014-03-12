@@ -181,8 +181,12 @@
     padding: 0.5em 1.5em;
 }
 
-.teaser-form input[type="submit"]:hover,
+.teaser-form input[type="submit"]:hover {
+    background-color: hsl(204, 65%, 60%);
+}
+
 .teaser-form input[type="submit"]:focus {
+    border-color: hsl(204, 65%, 40%);
     background-color: hsl(204, 65%, 60%);
 }
 
