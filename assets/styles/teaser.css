@@ -168,17 +168,14 @@
     border-color: hsl(0,0%,30%);
 }
 
-.teaser-form input:invalid {
-    border-color: hsl(0,100%,40%);
-}
-
 .teaser-form input[type="submit"] {
-    margin-top: 0.4em;
     width: auto;
+    margin-top: 0.4em;
+    padding: 0.5em 1.5em;
     color: #fff;
     border: 1px solid hsl(204, 65%, 50%);
-    background: #479dd8 linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
-    padding: 0.5em 1.5em;
+    background-color: #479dd8;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 .teaser-form input[type="submit"]:hover {
