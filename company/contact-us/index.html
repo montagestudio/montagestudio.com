@@ -26,31 +26,67 @@ contact: true
     <div class="col col-1-2">
         <h3 class="title-xxx">Ask Montage Studio</h2>
         
-        <p>What can we help you with? *
-        (Check one)
-        []  Partnership
-        []    Professional Services
-        []     Educational
-        []     Events
-        []    Marketing
-        []    PR
-        []     Support
-        []     Feedback</p>
+        <div class="form">
+            
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+            <!--  If necessary, please modify the charset parameter to specify the        -->
+            <!--  character set of your HTML page.                                        -->
+            <!--  ----------------------------------------------------------------------  -->
+            
+            <!--<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">-->
+            
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: Please add the following <FORM> element to your page.             -->
+            <!--  ----------------------------------------------------------------------  -->
+            
+            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            
+                <input type=hidden name="oid" value="00DG0000000jEdg">
+                <input type=hidden name="retURL" value="http://montagestudio.com/reveal/thanks.html">
+                
+                <!--  ----------------------------------------------------------------------  -->
+                <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                <!--  these lines if you wish to test in debug mode.                          -->
+                <!--  <input type="hidden" name="debug" value=1>                              -->
+                <!--  <input type="hidden" name="debugEmail"                                  -->
+                <!--  value="kristie@montagestudio.com">                                      -->
+                <!--  ----------------------------------------------------------------------  -->
+                
+                <label for="00NG000000DVurJ">Interests</label><select id="00NG000000DVurJ" multiple="multiple" name="00NG000000DVurJ" title="Interests">
+                <option value="Feedback">Feedback</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Professional Services">Professional Services</option>
+                <option value="Support">Support</option>
+                <option value="Educational">Educational</option>
+                <option value="Events">Events</option>
+                <option value="Marketing">Marketing</option>
+                <option value="PR">PR</option>
+                </select>
+                
+                <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                
+                <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                
+                <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" />
+                
+                <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+                
+                <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" />
+                
+                <label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" />
+                                
+                <label for="description">Description</label><textarea name="description" rows="4"></textarea>
+                
+                <p>Fields marked with * are required.</p>
+                
+                <input type="submit" name="submit">
+            
+            </form>
         
-        <p>First Name* 
-        Last Name*
-        Email*
-        Phone
-        Company*
-        Title*
-        Country (inferred)
-        Comments:
-        [  ]</p>
+        </div>
         
-        <p>Please keep me up to date with news!
-        [Submit button]</p>
         
-        <p>Fields marked with * are required.</p>
     </div>
     
 </div>

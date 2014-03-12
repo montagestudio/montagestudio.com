@@ -128,10 +128,8 @@
     margin-bottom: 1em;
     border-radius: 1em;
     border: 6px solid hsla(0, 0%, 0%, 0.2);
-    color: #6C6C6C;
     background-color: #fff;
     background-clip: padding-box;
-    text-align: right;
 }
 
 .teaser-form .title-xx {
@@ -139,56 +137,6 @@
     font-size: 1.6em;
     text-align: center;
     color: #333;
-}
-
-.teaser-form label {
-    display: inline-block;
-    width: 44%;
-    font-size: 15px;
-    margin-right: 1em;
-}
-
-.teaser-form select {
-    width: 48%;
-    margin-bottom: 0.6em;
-}
-
-.teaser-form input {
-    width: 48%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 0.6em;
-    border-radius: 4px;
-    border: 1px solid #BEBEBE;
-    padding: .2em 0.4em;
-}
-
-.teaser-form input:focus {
-    outline: none;
-    border-color: hsl(0,0%,30%);
-}
-
-.teaser-form input[type="submit"] {
-    width: auto;
-    margin-top: 0.4em;
-    padding: 0.5em 1.5em;
-    color: #fff;
-    border: 1px solid hsl(204, 65%, 50%);
-    background-color: #479dd8;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
-}
-
-.teaser-form input[type="submit"]:hover {
-    background-color: hsl(204, 65%, 60%);
-}
-
-.teaser-form input[type="submit"]:focus {
-    border-color: hsl(204, 65%, 40%);
-    background-color: hsl(204, 65%, 60%);
-}
-
-.teaser-form input[type="submit"]:active {
-    background-color: hsl(204, 65%, 36%);
 }
 
 
@@ -279,36 +227,12 @@
         padding: 1em;
         border: none;
         border-radius: .5em;
-    
         text-align: left;
     }
     
     .teaser-form .title-xx {
         font-size: 1.2em;
         text-align: left;
-    }
-    
-    .teaser-form label {
-        display: block;
-        width: 100%;
-        margin-right: 0;
-    }
-    
-    .teaser-form select {
-        display: block;
-        width: 100%;
-    }
-    
-    .teaser-form input {
-        display: block;
-        width: 100%;
-        margin: 0;
-    }
-    
-    .teaser-form input[type="submit"] {
-        display: block;
-        width: 100%;
-        margin: 0;
     }
 
 }
