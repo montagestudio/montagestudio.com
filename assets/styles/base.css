@@ -4,7 +4,7 @@
 
 html {
     color: hsl(0,0%,25%);
-    font: 13px/1.231 'Open Sans', sans-serif;
+    font: 13px/1.231 'Gotham A', 'Gotham B', sans-serif;
     background-color: #fff;
 }
 
@@ -22,8 +22,8 @@ a:active {
 h1 {
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+strong, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }
 
 .hasIframe {
@@ -84,7 +84,7 @@ section {
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -107,7 +107,7 @@ section {
 
 .intro,
 .intro .cols > .col {
-    font-size: 16px; /* TODO: refactor */
+    font-size: 18px; /* TODO: refactor */
 }
 
 
@@ -146,7 +146,7 @@ section {
     display: inline-block;
     vertical-align: top;
     margin-right: 4%;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .cols > .col:last-child {
