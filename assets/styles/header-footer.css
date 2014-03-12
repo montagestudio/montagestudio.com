@@ -29,37 +29,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    -webkit-transition: -webkit-transform .2s;
-       -moz-transition:    -moz-transform .2s;
-        -ms-transition:     -ms-transform .2s;
-         -o-transition:      -o-transform .2s;
-            transition:         transform .2s;
 }
 
 .header .logo:hover {
-    -webkit-transition-duration: .1s;
-       -moz-transition-duration: .1s;
-        -ms-transition-duration: .1s;
-         -o-transition-duration: .1s;
-            transition-duration: .1s;
-    -webkit-transform: translateY(-4px);
-       -moz-transform: translateY(-4px);
-        -ms-transform: translateY(-4px);
-         -o-transform: translateY(-4px);
-            transform: translateY(-4px);
+    opacity: .9;
 }
 
 .header .logo:active {
-    -webkit-transition-duration: .04s;
-       -moz-transition-duration: .04s;
-        -ms-transition-duration: .04s;
-         -o-transition-duration: .04s;
-            transition-duration: .04s;
-    -webkit-transform: translateY(10px);
-       -moz-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-         -o-transform: translateY(10px);
-            transform: translateY(10px);
+    opacity: .8;
 }
 
 
