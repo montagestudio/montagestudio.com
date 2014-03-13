@@ -32,7 +32,10 @@
 
 /* Product ------------------------------------------- */
 
-.home-desktop {
+.home-family,
+.home-desktop,
+.home-tablet,
+.home-phone {
     display: none;
 }
 
@@ -42,28 +45,12 @@
     max-width: 500px;
 }
 
-.home-phone {
-    position: relative;
-    display: block;
-    width: 50%;
-    max-width: 180px;
-    margin: -150px auto 20px 20%;
-}
-
 .home-info {
     margin: 2em auto; max-width: 500px;
 }
 
 .home-info .button--action {
     margin: 0.6em 0;
-}
-
-.home-tablet {
-    position: relative;
-    display: block;
-    max-width: 440px;
-    width: 100%;
-    margin: -36px 20% 0 auto;
 }
 
 
@@ -84,30 +71,64 @@
 }
 
 
+@media all and (max-width: 1039px) {
+    
+    .home-family {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        padding-top: 66.666%;
+        background: url(../images/home/family.jpg) no-repeat left top;
+        background-size: 100% auto;
+    }
+
+}
 
 
 @media all and (min-width: 1040px) {
-
-    .hero-title {
-        max-width: 360px;
-    }
-
-    .hero-description {
-        max-width: 360px;
-    }
     
     .devices .wrapper { 
         height: 720px;
     }
     
+    .hero-title,
+    .hero-description {
+        max-width: 360px;
+    }
     
     .home-desktop {
         display: block;
         position: absolute;
         width: 700px;
+        height: 531px;
         top: -360px;
         right: -120px;
+        background: url(../images/home/desktop.png) no-repeat left top;
+        background-size: 100% auto;
     }
+    
+    .home-tablet {
+        display: block;
+        position: absolute; 
+        width: 440px;
+        height: 353px;
+        top: 370px; 
+        left: 0;
+        background: url(../images/home/tablet.jpg) no-repeat left top;
+        background-size: 100% auto;
+    }
+    
+    .home-phone {
+        display: block;
+        position: absolute;
+        top: -91px;
+        left: 0;
+        width: 180px;
+        height: 396px;
+        background: url(../images/home/phone.png) no-repeat left top;
+        background-size: 100% auto;
+    }
+
     
     .home-list {
         position: absolute;
@@ -115,28 +136,10 @@
         left: 250px;
     }
     
-    .home-phone {
-        position: absolute;
-        top: -91px;
-    
-        left: 0;
-        margin: 0;
-}
-    
     .home-info {
         position: absolute;
         top: 317px;
         left: 510px;
     }
-    
-    .home-tablet {
-        position: absolute; 
-        top: 370px; 
-        left: 0;
-    
-        margin: 0;
-}
-    
-    
 
 }
