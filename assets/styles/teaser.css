@@ -10,19 +10,11 @@
     font-weight: 300;
 }
 
-.teaser--home {
-   background-position: center 24%;
-}
-
 .teaser .wrapper {
     position: relative;
     color: #fff;
     text-shadow: none;
     line-height: 1.5;
-}
-
-.teaser--home .wrapper {
-    max-width: 461px;
 }
 
 .teaser p {
@@ -33,7 +25,8 @@
 /* Teaser copy ------------------------------------------- */
 
 .teaser-title {
-    font-size: 48px;
+    font-size: 2.4em;
+    font-weight: 300;
     margin-bottom: 0.8em;
 }
 
@@ -42,14 +35,16 @@
 }
 
 .teaser-copy {
-    font-size: 28px;
-}
-
-.teaser--home .teaser-copy {
+    font-size: 1.4em;
 }
 
 .teaser-cta {
     font-size: 22px;
+}
+
+.teaser-visual {
+    display: block;
+    width: 100%;
 }
 
 
