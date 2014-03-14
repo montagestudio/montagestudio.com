@@ -1,8 +1,7 @@
 /* Gallery ---------------------------------------------------------------------------------- */
 
 .gallery {
-    background: url(../images/gallery/bg.jpg) no-repeat center center;
-    background-size: cover;
+    background-color: #999999;
     color: #fff;
     font-weight: 300;
 }
@@ -128,6 +127,11 @@
 
 @media all and (min-width: 701px) {
     
+    .gallery {
+        background: #717171 url(../images/gallery/bg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
     .gallery .intro,
     .gallery .intro .cols > .col {
         font-size: 18px;
@@ -139,7 +143,7 @@
         margin: 2%;
     
         vertical-align: top;
-}
+    }
     
     .gallery-thumb {
         vertical-align: top;
@@ -148,7 +152,7 @@
     .gallery-info {
     text-align: left;
     
-}
+    }
     
 }
 
