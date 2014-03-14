@@ -1,7 +1,7 @@
 /* Gallery ---------------------------------------------------------------------------------- */
 
 .gallery {
-    background-color: #999999;
+    background-color: #8F8F8F;
     color: #fff;
     font-weight: 300;
 }
@@ -125,10 +125,19 @@
 
 /* Responsive Gallery ----------------------------------------- */
 
+@media all and (max-width: 700px) {
+    
+    .gallery {
+        background: #8F8F8F url(../images/gallery/bg-small.jpg) no-repeat center top;
+        background-size: 100% auto;
+    }
+    
+}
+
 @media all and (min-width: 701px) {
     
     .gallery {
-        background: #717171 url(../images/gallery/bg.jpg) no-repeat center center;
+        background: #8F8F8F url(../images/gallery/bg.jpg) no-repeat center center;
         background-size: cover;
     }
 

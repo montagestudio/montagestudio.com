@@ -98,9 +98,22 @@ section {
 
 /* Page ----------------------------------------- */
 
-.page {
-    background: url(../images/bg-light.jpg) no-repeat center top;
-    background-size: 100% auto;
+@media all and (max-width: 700px) {
+    
+    .page {
+        background: url(../images/bg-light-small.jpg) no-repeat center top;
+        background-size: 100% auto;
+    }
+    
+}
+
+@media all and (min-width: 701px) {
+    
+    .page {
+        background: url(../images/bg-light.jpg) no-repeat center top;
+        background-size: 100% auto;
+    }
+    
 }
 
 
