@@ -77,6 +77,12 @@
     }
 }
 
+.gallery-thumb--disabled,
+.gallery-thumb--disabled:hover,
+.gallery-thumb--disabled:active {
+    border: 3px solid white;
+}
+
 
 
 /* Gallery Info --------------------------- */
