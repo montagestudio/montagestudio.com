@@ -39,18 +39,22 @@
     display: none;
 }
 
-.home-list {
+.home-content {
     position: relative;
     margin: 2em auto;
     max-width: 500px;
 }
 
-.home-info {
-    margin: 2em auto; max-width: 500px;
+.home-list {
+    list-style: none;
+    padding: 0;
 }
 
-.home-info .button--action {
+.home-content .button--action {
     margin: 0.6em 0;
+    font-size: 18px;
+    line-height: 1; padding: 1.2em 1.4em;
+    border-radius: 0.4em;
 }
 
 
@@ -63,8 +67,7 @@
         font-size: 16px;
     }
     
-    .home-list,
-    .home-info {
+    .home-content {
         max-width: 600px;
     }
 
@@ -88,7 +91,7 @@
 @media all and (min-width: 1040px) {
     
     .devices .wrapper { 
-        height: 720px;
+        /* height: 560px; */
     }
     
     .hero-title,
@@ -99,30 +102,32 @@
     .home-desktop {
         display: block;
         position: absolute;
-        width: 700px;
-        height: 531px;
-        top: -360px;
-        right: -120px;
+        width: 560px;
+        height: 490px;
+        top: -400px;
+        right: 0px;
         background: url(../images/home/desktop.png) no-repeat left top;
         background-size: 100% auto;
-    }
+        /* -webkit-transform: perspective(1800) rotateY(-36deg); */
+    
+}
     
     .home-tablet {
         display: block;
         position: absolute; 
         width: 440px;
         height: 353px;
-        top: 370px; 
-        left: 0;
-        background: url(../images/home/tablet.jpg) no-repeat left top;
+        top: -120px; 
+        left: 80px;
+        background: url(../images/home/tablet.png) no-repeat left top;
         background-size: 100% auto;
     }
     
     .home-phone {
         display: block;
         position: absolute;
-        top: -91px;
-        left: 0;
+        top: -60px;
+        left: 450px;
         width: 180px;
         height: 396px;
         background: url(../images/home/phone.png) no-repeat left top;
@@ -130,16 +135,12 @@
     }
 
     
-    .home-list {
-        position: absolute;
-        top: 90px;
-        left: 250px;
-    }
+    .home-content {
+        /* position: absolute; */
+        /* top: -60px; */
+        /* left: 580px; */
     
-    .home-info {
-        position: absolute;
-        top: 317px;
-        left: 510px;
-    }
-
+        padding-top: 350px;
+}
+    
 }
