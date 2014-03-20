@@ -19,7 +19,7 @@
 
 .hero-title {
     margin-top: 0;
-    font-size: 2.4em;
+    font-size: 2em;
     line-height: 1.2;
     font-weight: 300;
 }
@@ -60,7 +60,7 @@
 
 .home-list li {
     margin: 3em 0;
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 40%);
 }
 
 .home-list .title-xxx {
@@ -84,11 +84,14 @@
 
 
 .home-content .button--action {
-    margin: 0.6em 0;
+    display: block;
+    margin: 0.6em auto;
     font-size: 20px;
     line-height: 1; 
     padding: 1em 1.2em;
     border-radius: 0.4em;
+    width: 180px;
+    text-align: center;
 }
 
 
@@ -96,6 +99,10 @@
 /* Responsive ----------------------------------------- */
 
 @media all and (min-width: 700px) {
+    
+    .hero-title {
+        font-size: 2.4em;
+    }
     
     .devices .wrapper { 
         font-size: 16px;
@@ -119,7 +126,6 @@
     
     .home-list p {
         font-size: 1em;
-    
         margin-left: 100px;
     }
     
