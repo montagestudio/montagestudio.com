@@ -52,8 +52,9 @@
 
 .home-content .button--action {
     margin: 0.6em 0;
-    font-size: 18px;
-    line-height: 1; padding: 1.2em 1.4em;
+    font-size: 20px;
+    line-height: 1; 
+    padding: 1em 1.2em;
     border-radius: 0.4em;
 }
 
@@ -102,12 +103,12 @@
     .home-desktop {
         display: block;
         position: absolute;
-        width: 560px;
-        height: 490px;
-        top: -400px;
-        right: 0px;
-        background: url(../images/home/desktop.png) no-repeat left top;
-        background-size: 100% auto;
+        width: 600px;
+        height: 502px;
+        top: -390px;
+        right: -60px;
+        background-position: left top;
+        background-repeat: no-repeat;
         /* -webkit-transform: perspective(1800) rotateY(-36deg); */
     
 }
@@ -115,10 +116,10 @@
     .home-tablet {
         display: block;
         position: absolute; 
-        width: 440px;
-        height: 353px;
+        width: 360px;
+        height: 290px;
         top: -120px; 
-        left: 80px;
+        left: 0px;
         background: url(../images/home/tablet.png) no-repeat left top;
         background-size: 100% auto;
     }
@@ -126,21 +127,60 @@
     .home-phone {
         display: block;
         position: absolute;
-        top: -60px;
-        left: 450px;
-        width: 180px;
-        height: 396px;
+        top: -50px;
+        left: 270px;
+        width: 110px;
+        height: 242px;
         background: url(../images/home/phone.png) no-repeat left top;
         background-size: 100% auto;
     }
-
+    
+    .home-tagline {
+        position: absolute;
+        top: 75px;
+        left: 450px;
+        right: 0;
+        font-size: 26px;
+        font-style: italic;
+        color: hsl(0, 0%, 50%);
+    }
     
     .home-content {
-        /* position: absolute; */
-        /* top: -60px; */
-        /* left: 580px; */
+        padding-top: 220px;
+        max-width: none;
     
-        padding-top: 350px;
+        text-align: center;
 }
     
+    .home-list li {
+        display: inline-block;
+    
+        width: 44%;
+        text-align: left;
+        vertical-align: top;
+        margin: 1em 2%;
+    
+        color: hsl(0, 0%, 50%);
 }
+    
+    .home-list .title-xxx {
+        font-weight: 400;
+        font-size: 1.3em;
+        color: hsl(0, 0%, 25%);
+    }
+    
+}
+
+@media (min-width: 1040px) and (-webkit-max-device-pixel-ratio: 1.49), (min-width: 1040px) and (max-resolution: 143dpi) {
+    .home-desktop {
+        background-image: url(../images/home/desktop@1x.png);
+    }
+}
+
+@media (min-width: 1040px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1040px) and (min-resolution: 144dpi) {
+    .home-desktop {
+        background-image: url(../images/home/desktop.png);
+        background-size: 100% auto;
+    }
+}
+
