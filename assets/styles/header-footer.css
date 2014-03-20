@@ -289,7 +289,11 @@
 }
 
 @media all and (max-width: 700px) {
-
+    
+    section {
+        padding: 20px;
+    }
+    
     .footer {
         background: #181724 url(http://staging.montagestudio.com/assets/images/bg-footer--vertical.jpg) no-repeat top center;
         background-size: 100% auto;
@@ -313,10 +317,6 @@
 
     body > section:first-of-type {
         margin-top: 0px;
-    }
-
-    section {
-        padding: 20px;
     }
 
     .header {
