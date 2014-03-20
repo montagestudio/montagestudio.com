@@ -59,9 +59,8 @@
 }
 
 .home-list li {
-    margin: 2em 0;
+    margin: 3em 0;
     color: hsl(0, 0%, 50%);
-    min-height: 140px;
 }
 
 .home-list .title-xxx {
@@ -114,11 +113,15 @@
         width: 80px;
     }
     
+    .home-list li {
+        min-height: 120px;
+    }
+    
     .home-list p {
         font-size: 1em;
     
         margin-left: 100px;
-}
+    }
     
 }
 
