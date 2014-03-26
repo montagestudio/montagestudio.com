@@ -167,7 +167,7 @@
         position: absolute;
         width: 600px;
         height: 502px;
-        top: -390px;
+        top: -350px;
         right: -60px;
         background-position: left top;
         background-repeat: no-repeat;
@@ -181,7 +181,7 @@
         width: 360px;
         height: 290px;
         top: -120px; 
-        left: 0px;
+        left: 100px;
         background: url(../images/home/tablet.png) no-repeat left top;
         background-size: 100% auto;
     }
@@ -190,7 +190,7 @@
         display: block;
         position: absolute;
         top: -50px;
-        left: 270px;
+        left: 430px;
         width: 110px;
         height: 242px;
         background: url(../images/home/phone.png) no-repeat left top;
