@@ -55,11 +55,10 @@
             var myip;
             function ip_callback(o) {
                 myip = o.host;
+                document.getElementById("00NG000000DXjMh").value = myip;
             }
         </script>
-        <script async src="https://smart-ip.net/geoip-json?callback=ip_callback"></script>
-        <script>document.getElementById("00NG000000DXjMh").value = myip;</script>
-        
+        <script async src="https://smart-ip.net/geoip-json?callback=ip_callback"></script>        
 
         <!--  ----------------------------------------------------------------------  -->
         <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
