@@ -53,7 +53,7 @@
     display: inline-block;
     font-size: 15px;
     margin: 0;
-    padding: 20px;
+    padding: 20px 15px;
     color: hsla(0, 0%, 70%, 1);
     text-decoration: none;
 }
@@ -313,7 +313,7 @@
 
 /* Responsive Header ----------------------------------------- */
 
-@media all and (max-width: 920px) { /* width needs to be manually adjusted if nav changes */
+@media all and (max-width: 1040px) { /* width needs to be manually adjusted if nav changes */
 
     body > section:first-of-type {
         margin-top: 0px;
