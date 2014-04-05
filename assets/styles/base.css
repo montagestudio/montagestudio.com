@@ -428,6 +428,11 @@ section {
     width: 100%;
 }
 
+.img--contentCol {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 60px;
+}
 
 
 
