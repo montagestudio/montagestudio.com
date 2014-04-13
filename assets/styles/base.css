@@ -78,6 +78,9 @@ strong, h1, h2, h3, h4, h5, h6 {
 
 
 @media all and (max-width: 700px) { 
+    .title-x {
+        font-size: 1.6em;
+    }
     .quote {
         padding: 0;
         font-size: 1em;
@@ -157,6 +160,10 @@ section {
     
     .content {
         margin: 0;
+    }
+    
+    .content ul {
+        padding-left: 1.2em;
     }
 
 }
