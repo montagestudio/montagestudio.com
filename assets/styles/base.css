@@ -23,19 +23,17 @@ a:active {
     color: hsl(220,60%,50%);
 }
 
-h1 {
-}
-
 strong, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.hasIframe {
-    /* Adds scroll support for iFrames on iOS */
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+hr {
+    margin: 4em 33%;
+    border: none;
+    border-bottom: 1px dashed #999;
 }
 
+h1,
 .title,
 .title-x {
     margin: 0;
@@ -44,6 +42,7 @@ strong, h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h2,
 .sub-title,
 .title-xx {
     margin-bottom: 0;
@@ -52,16 +51,24 @@ strong, h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h3,
 .title-xxx {
     margin-bottom: 0;
     font-size: 1.4em;
     line-height: 1.2;
 }
 
+.hasIframe {
+    /* Adds scroll support for iFrames on iOS */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .nowrap {
     white-space: nowrap;
 }
 
+blockquote,
 .quote {
     margin: 1.5em 0;
     padding: 0 15%;
@@ -81,6 +88,7 @@ strong, h1, h2, h3, h4, h5, h6 {
     .title-x {
         font-size: 1.6em;
     }
+    blockquote,
     .quote {
         padding: 0;
         font-size: 1em;
