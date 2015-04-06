@@ -10,7 +10,7 @@
 }
 
 .company-avatar {
-    width: 120px;
+    width: 190px;
     float: left;
     margin: 0 1.5em 1.5em 0;
 }
@@ -36,36 +36,36 @@
 
 
 @media all and (max-width: 700px) {
-    
+
     .company {
         padding-top: 45%;
         background: url(../images/company/bg-small.jpg) no-repeat center top;
         background-size: 100% auto;
     }
-    
+
 }
 
 @media all and (min-width: 701px) {
-    
+
     .company {
         background: url(../images/company/bg.jpg) no-repeat center -80px;
         background-size: 1200px auto;
     }
-    
+
 }
 
 
 @media all and (max-width: 920px) {
-    
+
     .company .subnav {
         position: absolute;
     }
-    
+
     .company {
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     .company .wrapper {
         padding: 1.5em;
     }
@@ -73,6 +73,6 @@
     .company .founder {
         margin-bottom: 2em;
     }
-    
-    
+
+
 }
