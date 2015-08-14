@@ -1,6 +1,7 @@
 body.modal-is-active {
     overflow: hidden;
     position: fixed;
+    width: 100%;
 }
 
 .video-overlay {
