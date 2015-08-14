@@ -17,6 +17,7 @@ body.modal-is-active {
     -webkit-transform: scale(.7);
             transform: scale(.7);
     opacity: 0;
+    pointer-events: none;
 }
 
 .modal-is-active .video-overlay {
@@ -24,6 +25,7 @@ body.modal-is-active {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
+    pointer-events: auto;
 }
 
 .video-container {
@@ -86,7 +88,7 @@ body.modal-is-active {
 
 
 .close:hover  {opacity: 1;}
-.close:active {outline: none;}
+.close:active {opacity: 1; outline: none;}
 
 .close:before,
 .close:after {
@@ -114,6 +116,12 @@ body.modal-is-active {
     text-shadow: none;
 }
 
+a {
+    color: rgba(0,0,0,.5);
+    font-weight: 400;
+}
+
+a:hover { color: rgba(0,0,0,1); }
 
 .gallery .intro,
 .gallery .intro .cols > .col {
@@ -228,6 +236,8 @@ body.modal-is-active {
 
 .gallery-button--secondary {
 }
+
+.gallery-button--video {cursor: pointer;}
 
 .gallery-button--video:before {
     content: '';

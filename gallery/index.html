@@ -9,7 +9,9 @@ gallery: true
 <div class="video-overlay is-visible">
     <button id="videoClose" class="close"></button>
     <div class="video-container">
-    <div id="galleryVideo" class="video"></div>
+    <div class="video">
+        <iframe id="galleryVideo" src="" frameborder='0' allowfullscreen ></iframe>
+    </div>
     </div>
 </div>
 
@@ -32,11 +34,11 @@ gallery: true
                 </a>
                 <div class="gallery-info">
                     <p class="gallery-description">
-                        A 3d Heart for Patient Education, directly on your patient's browser. We teamed up with UpTempo Group to deliver an interactive health education experience. This app allows a user to learn about the various functions of the heart by tapping anywhere on a 3d model of the heart.
+                        A 3d Heart Patient Education App for PC and Tablet, crafted with WebGL and Montage. We teamed up with <a href="http://www.uptempo.biz" target="_blank">UpTempo&nbsp;Group</a> to deliver a rich, intuitive experience to learn about heart anatomy and conditions, by directly interacting with a 3d model of the heart.
                     </p>
                     <div class="gallery-buttons">
                         <a class="gallery-button" href="http://www.medgl.com/heart-demo/" target="_blank">Launch</a>
-                        <a class="gallery-button gallery-button--video" data-video="true" href="https://www.youtube.com/embed/ulbl0Kxbo6o">Play Video</a>
+                        <span class="gallery-button gallery-button--video" data-href="https://www.youtube.com/embed/ulbl0Kxbo6o">Play Video</span>
                     </div>
                 </div>
             </li>
@@ -47,10 +49,11 @@ gallery: true
                 </a>
                 <div class="gallery-info">
                     <p class="gallery-description">
-                        We once again teamed up with UpTempo Group to deliver an interactive health education experience. We built this app to allow a users to quickly learn about the various functions of the eye by simply tapping on a 3d model of the eye in their browser.
+                        We once again teamed up with <a href="http://www.uptempo.biz" target="_blank">UpTempo&nbsp;Group</a> to deliver an interactive health education experience. This time we created a 3d eye that users could directly interact with and learn about it's various functions whether using their tablet or pc.
                     </p>
                     <div class="gallery-buttons">
                         <a class="gallery-button" href="http://www.medgl.com/eye-demo/" target="_blank">Launch</a>
+                        <span class="gallery-button gallery-button--video" data-href="https://www.youtube.com/embed/iEvUF_Ht2io">Play Video</span>
                     </div>
                 </div>
             </li>
@@ -184,17 +187,15 @@ gallery: true
     // toggle Youtube video
 
     var playVideo = function (e) {
+        console.log('click');
 
         // check if link has data video attribute
-        if (e.target.getAttribute('data-video')) {
-            e.preventDefault();
-            var videoSrc = e.target.getAttribute('href');
+        if (e.target.getAttribute('data-href')) {
 
-            // create iFrame element and add src from href attribute
-            var videoElement = "<iframe src=" + videoSrc + " frameborder='0' allowfullscreen ></iframe>"
+            var videoSrc = e.target.getAttribute('data-href');
 
-            // add to galleryVideo element
-            galleryVideo.innerHTML = videoElement;
+            // add youtube src to galleryVideo element
+            galleryVideo.setAttribute('src', videoSrc);
             toggleModal();
         }
     }
