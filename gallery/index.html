@@ -187,7 +187,6 @@ gallery: true
     // toggle Youtube video
 
     var playVideo = function (e) {
-        console.log('click');
 
         // check if link has data video attribute
         if (e.target.getAttribute('data-href')) {
@@ -206,9 +205,9 @@ gallery: true
         if (body.classList.contains(toggleModalClass)) {
             body.classList.remove(toggleModalClass);
 
-            // setTimeout to remove youTube iframe
+            // setTimeout to remove youTube src and stop playing
             window.setTimeout(function() {
-                galleryVideo.innerHTML = '';
+                galleryVideo.setAttribute('src', '');
             }, 750);
 
         } else {
