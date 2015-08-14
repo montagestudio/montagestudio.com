@@ -6,21 +6,55 @@ gallery: true
 
 ---
 
-
+<div class="video-overlay is-visible">
+    <button id="videoClose" class="close"></button>
+    <div class="video-container">
+    <div id="galleryVideo" class="video"></div>
+    </div>
+</div>
 
 <section class="gallery">
+
     <div class="wrapper">
-        
+
 
         <div class="intro">
             <h1 class="title-x">HTML5 Apps Amplified by Montage Studio</h1>
             <p>When web designers and developers work together in Montage Studio, exceptional 2D and 3D Web applications result.</p>
-            <p>Explore what’s possible with Montage Studio. *</p>                                    
+            <p>Explore what’s possible with Montage Studio. *</p>
         </div>
-        
-        
-        <ul class="gallery-list">
-            
+
+        <ul id="galleryList" class="gallery-list">
+
+            <li class="gallery-item">
+                <a class="gallery-thumb" href="http://www.medgl.com/heart-demo/" target="_blank">
+                    <img class="gallery-img" src="../assets/images/gallery/heartApp_thumb.jpg" alt="RadioIO">
+                </a>
+                <div class="gallery-info">
+                    <p class="gallery-description">
+                        A 3d Heart for Patient Education, directly on your patient's browser. We teamed up with UpTempo Group to deliver an interactive health education experience. This app allows a user to learn about the various functions of the heart by tapping anywhere on a 3d model of the heart.
+                    </p>
+                    <div class="gallery-buttons">
+                        <a class="gallery-button" href="http://www.medgl.com/heart-demo/" target="_blank">Launch</a>
+                        <a class="gallery-button gallery-button--video" data-video="true" href="https://www.youtube.com/embed/ulbl0Kxbo6o">Play Video</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="gallery-item">
+                <a class="gallery-thumb" href="http://www.medgl.com/eye-demo/" target="_blank">
+                    <img class="gallery-img" src="../assets/images/gallery/eyeApp_thumb.jpg" alt="RadioIO">
+                </a>
+                <div class="gallery-info">
+                    <p class="gallery-description">
+                        We once again teamed up with UpTempo Group to deliver an interactive health education experience. We built this app to allow a users to quickly learn about the various functions of the eye by simply tapping on a 3d model of the eye in their browser.
+                    </p>
+                    <div class="gallery-buttons">
+                        <a class="gallery-button" href="http://www.medgl.com/eye-demo/" target="_blank">Launch</a>
+                    </div>
+                </div>
+            </li>
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="http://www.radioio.com/everywhere-mobile/" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/radioio.jpg" alt="RadioIO">
@@ -35,7 +69,7 @@ gallery: true
                     </div>
                 </div>
             </li>
-            
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="http://montagestudio.com/demos/eco-homes/" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/den-demo.jpg" alt="Den Demo">
@@ -50,7 +84,7 @@ gallery: true
                     </div>
                 </div>
             </li>
-            
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="http://montagestudio.com/demos/popcorn/" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/popcorn.jpg" alt="Popcorn">
@@ -65,7 +99,7 @@ gallery: true
                     </div>
                 </div>
             </li>
-            
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="http://montagestudio.com/demos/beachplanetblog/" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/beachplanet.jpg" alt="Beach Planet">
@@ -94,7 +128,7 @@ gallery: true
                     </div>
                 </div>
             </li>
-            
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="http://montagestudio.com/demos/carconfigurator" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/carconfigurator.jpg" alt="Car Configurator">
@@ -109,7 +143,7 @@ gallery: true
                     </div>
                 </div>
             </li>
-            
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="http://montagestudio.com/demos/calculator" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/calculator.jpg" alt="Calculator">
@@ -123,7 +157,7 @@ gallery: true
                     </div>
                 </div>
             </li>
-            
+
             <li class="gallery-item">
                 <a class="gallery-thumb" href="../assets/images/gallery/scratchpad@2x.jpg" target="_blank">
                     <img class="gallery-img" src="../assets/images/gallery/scratchpad.jpg" alt="Scratchpad">
@@ -134,7 +168,7 @@ gallery: true
                     </p>
                 </div>
             </li>
-            
+
         </ul>
     </div>
 </section>
@@ -144,3 +178,51 @@ gallery: true
         <p class="gallery-note"><strong>*Note:</strong> The mobile and tablet optimized apps are supported in Mobile Safari on iOS 5.1 or later and Chrome for Android 4.0 or later. All other applications work best in the latest versions of Chrome, Firefox, Safari, and IE 10.</p>
     </div>
 </section>
+
+<script>
+
+    // toggle Youtube video
+
+    var playVideo = function (e) {
+
+        // check if link has data video attribute
+        if (e.target.getAttribute('data-video')) {
+            e.preventDefault();
+            var videoSrc = e.target.getAttribute('href');
+
+            // create iFrame element and add src from href attribute
+            var videoElement = "<iframe src=" + videoSrc + " frameborder='0' allowfullscreen ></iframe>"
+
+            // add to galleryVideo element
+            galleryVideo.innerHTML = videoElement;
+            toggleModal();
+        }
+    }
+
+    var toggleModal = function () {
+
+        // check to see if modal is open
+        if (body.classList.contains(toggleModalClass)) {
+            body.classList.remove(toggleModalClass);
+
+            // setTimeout to remove youTube iframe
+            window.setTimeout(function() {
+                galleryVideo.innerHTML = '';
+            }, 750);
+
+        } else {
+            body.classList.add(toggleModalClass);
+        }
+    }
+
+    var toggleModalClass = "modal-is-active"
+
+    var body                = document.body;
+    var galleryList         = document.getElementById('galleryList');
+    var galleryVideo        = document.getElementById('galleryVideo');
+    var videoCloseButton    = document.getElementById('videoClose');
+
+    galleryList.addEventListener("click", playVideo, false);
+    videoCloseButton.addEventListener("click", toggleModal, false);
+
+</script>
