@@ -34,6 +34,13 @@
                 form.email.focus();
                 return false;
             }
+
+            if(form.contact_type.value == '') {
+
+                alert('Please make a selection from the dropdown menu');
+                form.contact_type.focus();
+                return false;
+            }
                                 
             return true;
         }
@@ -52,14 +59,32 @@
         
         <!-- GET IP: http://stackoverflow.com/a/17414995 -->
         <input type=hidden name="00NG000000DXjMh" id="00NG000000DXjMh" value="">
+        <input type=hidden name="country_code" id="country_code" value="">
+        <input type=hidden name="state_code" id="state_code" value="">
+        <input type=hidden name="city" id="city" value="">
         <script>
-            var myip;
+            var myip,
+                mycountry,
+                mystate,
+                mycity;
+
             function ip_callback(o) {
-                myip = o.host;
+                myip = o.ip;
                 document.getElementById("00NG000000DXjMh").value = myip;
+
+                mycountry = o.country_code;
+                document.getElementById("country_code").value = mycountry;
+
+                mystate = o.region_code;
+                document.getElementById("state_code").value = mystate;
+
+                mycity = o.city;
+                document.getElementById("city").value = mycity;  
+             
             }
+            
         </script>
-        <script async src="https://smart-ip.net/geoip-json?callback=ip_callback"></script>        
+        <script async src="https://freegeoip.net/json/?callback=ip_callback"></script>        
         
         
         <!--  ----------------------------------------------------------------------  -->
@@ -67,7 +92,7 @@
         <!--  these lines if you wish to test in debug mode.                          -->
         <!--  <input type="hidden" name="debug" value=1>                              -->
         <!--  <input type="hidden" name="debugEmail"                                  -->
-        <!--  value="kristie@montagestudio.com">                                      -->
+        <!--  value="jonathan@montagestudio.com">                                      -->
         <!--  ----------------------------------------------------------------------  -->    
                 
         <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
@@ -83,7 +108,19 @@
         <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" />
         
         <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" />
-                    
+        
+        <p style="width:80%; float:right;">We would love to know more about you:</p>
+        <select  id="contact_type" name="00NG000000EStvu" title="Contact Type" style="width:60%; border-radius:4px;">
+            <option value="">-Pick one of these options-</option>
+            <option value="Individual Developer / Designer">I’m a web developer/designer curious about Montage Studio</option>
+            <option value="Digital Agencies">My company is interested in partnering with Montage Studio on projects</option>
+            <option value="Potential Customer">My company has a great project Montage Studio could help deliver</option>
+            <option value="Product Partner">My company could be a technology partner to Montage Studio</option>
+            <option value="Potential Hire">I’m excited by what you’re up to and would love to help!</option>
+            <option value="Unclear">I don't fall under any of these descriptions</option>
+        </select><br>
+        <br>
+
         <p>Fields marked with * are required.</p>
                     
         <input type="submit" name="submit">
