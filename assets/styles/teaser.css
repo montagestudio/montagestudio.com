@@ -134,6 +134,16 @@
     color: #333;
 }
 
+.contact_prompt {
+    min-width:80%; 
+    float:right; 
+    margin-top:0.6em;
+}
+
+.contact_type {
+    min-width:60%; border-radius:4px;
+}
+
 
 
 /* Social bar ------------------------------------------- */
