@@ -17,10 +17,6 @@
     line-height: 1.5;
 }
 
-.teaser p {
-    margin-top: 0;
-}
-
 
 /* Teaser copy ------------------------------------------- */
 
@@ -136,7 +132,6 @@
 
 .contact_prompt {
     min-width:80%; 
-    float:right; 
     margin-top:0.6em;
 }
 
