@@ -6,11 +6,11 @@ gallery: true
 
 ---
 
-<div class="video-overlay is-visible">
+<div id="videoOverlay" class="video-overlay is-visible">
     <button id="videoClose" class="close"></button>
     <div class="video-container">
     <div class="video">
-        <iframe id="galleryVideo" src="" frameborder='0' allowfullscreen ></iframe>
+        <iframe id="galleryVideo" src="" frameborder='0' allowfullscreen></iframe>
     </div>
     </div>
 </div>
@@ -18,7 +18,6 @@ gallery: true
 <section class="gallery">
 
     <div class="wrapper">
-
 
         <div class="intro">
             <h1 class="title-x">HTML5 Apps Amplified by Montage Studio</h1>
@@ -28,10 +27,10 @@ gallery: true
 
         <ul id="galleryList" class="gallery-list">
 
-            <li class="gallery-item gallery-item--animated">
+            <li class="gallery-item">
                 <a class="gallery-thumb" href="http://www.medgl.com/heart-demo/" target="_blank">
-                    <img class="gallery-img" src="../assets/images/gallery/heartApp_thumb.jpg" alt="UpTempo Group - Heart App">
-                    <img class="gallery-gif" src="../assets/images/gallery/heart-app.gif" alt="UpTempo Group - Heart App">
+                    <img class="gallery-img" src="../assets/images/gallery/heartApp_thumb.jpg" alt="UpTempo Group - Heart App"><!--
+                    <img class="gallery-gif" src="../assets/images/gallery/heart-app.gif" alt="UpTempo Group - Heart App"> -->
                 </a>
                 <div class="gallery-info">
                     <p class="gallery-description">
@@ -39,9 +38,10 @@ gallery: true
                     </p>
                     <div class="gallery-buttons">
                         <a class="gallery-button" href="http://www.medgl.com/heart-demo/" target="_blank">Launch</a>
-                        <span class="gallery-button gallery-button--video" data-href="https://www.youtube.com/embed/ulbl0Kxbo6o">Play Video</span>
+                        <span class="gallery-button gallery-button--video" data-href="https://www.youtube.com/embed/ulbl0Kxbo6o?autoplay=1">Play Video</span>
                     </div>
                 </div>
+
             </li>
 
             <li class="gallery-item">
@@ -54,7 +54,7 @@ gallery: true
                     </p>
                     <div class="gallery-buttons">
                         <a class="gallery-button" href="http://www.medgl.com/eye-demo/" target="_blank">Launch</a>
-                        <span class="gallery-button gallery-button--video" data-href="https://www.youtube.com/embed/iEvUF_Ht2io">Play Video</span>
+                        <span class="gallery-button gallery-button--video" data-href="https://www.youtube.com/embed/iEvUF_Ht2io?autoplay=1">Play Video</span>
                     </div>
                 </div>
             </li>
@@ -201,6 +201,7 @@ gallery: true
     }
 
     var toggleModal = function () {
+        console.log('clicked');
 
         // check to see if modal is open
         if (body.classList.contains(toggleModalClass)) {
@@ -221,9 +222,11 @@ gallery: true
     var body                = document.body;
     var galleryList         = document.getElementById('galleryList');
     var galleryVideo        = document.getElementById('galleryVideo');
-    var videoCloseButton    = document.getElementById('videoClose');
+    var videoOverlay        = document.getElementById('videoOverlay');
 
     galleryList.addEventListener("click", playVideo, false);
-    videoCloseButton.addEventListener("click", toggleModal, false);
+
+    // needs to be rework if using other elements inside than an iframe
+    videoOverlay.addEventListener("click", toggleModal, false);
 
 </script>

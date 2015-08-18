@@ -1,3 +1,5 @@
+/* Video Overlay ---------------------------------------------------------------------------------- */
+
 body.modal-is-active {
     overflow: hidden;
     position: fixed;
@@ -149,7 +151,7 @@ a:hover { color: rgba(0,0,0,1); }
     display: block;
     margin: 4em auto;
     max-width: 340px;
-    /* text-align: left; */
+    text-align: left;
 }
 
 /* Gallery Thumbs --------------------------- */
@@ -209,10 +211,6 @@ a:hover { color: rgba(0,0,0,1); }
 
 /* Gallery Info --------------------------- */
 
-.gallery-info {
-    /* color: hsl(0,0%,50%); */
-
-}
 
 .gallery-description {
     font-size: 13px;
@@ -281,6 +279,10 @@ a:hover { color: rgba(0,0,0,1); }
         background-size: 100% auto;
     }
 
+    .gallery-item {
+        text-align: center;
+    }
+
 }
 
 @media all and (min-width: 701px) {
@@ -296,20 +298,16 @@ a:hover { color: rgba(0,0,0,1); }
     }
 
     .gallery-item {
+        /*position: relative;*/
         display: inline-block;
         width: 28%;
         margin: 2%;
-
         vertical-align: top;
+        min-height: 360px;
     }
 
     .gallery-thumb {
         vertical-align: top;
-    }
-
-    .gallery-info {
-    text-align: left;
-
     }
 
 }
