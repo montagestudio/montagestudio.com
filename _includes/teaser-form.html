@@ -60,12 +60,10 @@
         <!-- GET IP: http://stackoverflow.com/a/17414995 -->
         <input type=hidden name="00NG000000DXjMh" id="00NG000000DXjMh" value="">
         <input type=hidden name="country_code" id="country_code" value="">
-        <input type=hidden name="state" id="state" value="">
         <input type=hidden name="city" id="city" value="">
         <script>
             var myip,
                 mycountry,
-                mystate,
                 mycity;
 
             function ip_callback(o) {
@@ -74,9 +72,6 @@
 
                 mycountry = o.country_code;
                 document.getElementById("country_code").value = mycountry;
-
-                mystate = o.region_name;
-                document.getElementById("state").value = mystate;
 
                 mycity = o.city;
                 document.getElementById("city").value = mycity;  
