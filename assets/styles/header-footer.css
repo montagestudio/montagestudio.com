@@ -9,11 +9,15 @@
     padding: 0px 40px;
     text-align: left;
     background-color: #333; /* should make it scroll faster */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .header-container {
     position: relative;
-    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -204,16 +208,20 @@
 
 .sitemap {
     list-style: none;
-    margin: 0 0 0 170px;
+    margin: 0 0 0 250px;
     padding: 0;
     font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .sitemap li {
     display: inline-block;
-    margin: 0 2em;
+    /*margin: 0 2em;*/
     vertical-align: top;
     text-align: left;
+    flex: 1 0 150px;
 }
 
 .sitemap a {
@@ -261,7 +269,7 @@
 }
 
 @media all and (max-width: 920px) {
-    
+
     .footer-logo {
         display: block;
         position: relative;
@@ -281,6 +289,11 @@
 
 @media all and (min-width: 701px) {
 
+    .sitemap {
+        /*display: block;*/
+        flex-wrap: nowrap;
+    }
+
     .footer {
         background: #181724 url(http://staging.montagestudio.com/assets/images/bg-footer.jpg) no-repeat top center;
         background-size: auto 100%;
@@ -289,15 +302,15 @@
 }
 
 @media all and (max-width: 700px) {
-    
+
     .subnav {
         position: relative;
     }
-    
+
     section {
         padding: 20px;
     }
-    
+
     .footer {
         background: #181724 url(http://staging.montagestudio.com/assets/images/bg-footer--vertical.jpg) no-repeat top center;
         background-size: 100% auto;
@@ -318,13 +331,13 @@
 /* Responsive Header ----------------------------------------- */
 
 @media all and (max-width: 1040px) { /* width needs to be manually adjusted if nav changes */
-    
+
     body > section:first-of-type {
         margin-top: 0px;
     }
 
     .header {
-        position: relative;
+        /*position: relative;*/
         padding: 0.4em 0;
         font-size: 1.5em;
     }
@@ -355,3 +368,10 @@
     }
 
 }
+
+@media screen and (min-width: 1041px) {
+    .header-container {
+        max-width: 960px;
+    }
+}
+

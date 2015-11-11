@@ -1,6 +1,9 @@
 ---
-layout: page
+
+layout: page-company
 title: Montage Studio Jobs
+history: true
+
 ---
 
 Current Openings
@@ -19,7 +22,7 @@ We’re looking for an experienced and talented developer with a natural instinc
 
 Montage Studio Inc. is an early-stage startup funded by Floodgate Fund and Elevation Partners. Benoit Marchant, Founder & CEO, a 10+ year Apple veteran, has been building a talented and diverse team, attracting talent with experience at Apple, Google, Motorola, Shutterfly, Silicon Graphics and NeXT, including a JS1k winner.
 
-Inspired by the design and philosophy of native platforms, Montage Studio pairs MontageJS, a sophisticated, open-source HTML5 Framework with a dedicated cloud-based interactive authoring environment. As the first true web-native universal SDK, Montage Studio enables web designers and developers to craft powerful, future-proof applications that exceed user expectations, and drive multi-screen engagement. 
+Inspired by the design and philosophy of native platforms, Montage Studio pairs MontageJS, a sophisticated, open-source HTML5 Framework with a dedicated cloud-based interactive authoring environment. As the first true web-native universal SDK, Montage Studio enables web designers and developers to craft powerful, future-proof applications that exceed user expectations, and drive multi-screen engagement.
 
 
 #### Key Responsibilities
