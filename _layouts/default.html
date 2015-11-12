@@ -2,8 +2,9 @@
 
 <body>
   {% include header.html %}
-
-  {{ content }}
+    <main class="{% if page.home %}home {% endif %}{{page.name}}">
+        {{ content }}
+    </main>
 
   {% include footer.html %}
   {% include analytics.html %}

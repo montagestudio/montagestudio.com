@@ -255,3 +255,99 @@
     }
 }
 
+/*********************************
+Blocks
+*********************************/
+
+.blocks {
+    list-style: none;
+    padding: 0;
+    margin:  0;
+}
+
+.block {
+    box-sizing: border-box;
+    float: left;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* link */
+
+.block a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    color: inherit;
+    background-color: #FFF;
+    /*background-image: url(../images/bg-dark.jpg);*/
+    background-size: cover;
+    transition: background .2s ease-in-out;
+}
+
+/* border */
+
+.block:not(:last-child) a {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.block a:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+/* content container */
+
+.block-content {
+    width: 100%;
+    max-width: 20em;
+    text-align: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 750px) {
+    .block {
+        width: 50%;
+        height: 160px;
+    }
+
+    .block:nth-child(1) a,
+    .block:nth-child(3) a {
+        border-right: 1px solid rgba(0,0,0,.2);
+    }
+}
+
+@media screen and (min-width: 1075px) {
+    .block {
+        width: 25%;
+        height: 180px;
+    }
+
+    .block a {
+        border-bottom: none !important;
+    }
+
+    .block:nth-child(2) a {
+        border-right: 1px solid rgba(0,0,0,.2);
+    }
+}
+
+/*********************************
+Home
+*********************************/
+
+/* hero takes up available space */
+
+.home .hero {
+    min-height: 650px;
+    flex: 1;
+}
+
+.home .block h2 { margin: 0; }
+
+
+

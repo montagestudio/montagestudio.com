@@ -193,14 +193,8 @@
 
 @media all and (min-width: 801px) {
     .footer {
-        padding: 40px;
+        padding: 60px;
     }
-}
-
-.footer .wrapper {
-    position: relative;
-    margin: 0 auto;
-    max-width: 960px;
 }
 
 

@@ -8,6 +8,7 @@
     background-size: 1500px auto;
     border-top: none;
     font-weight: 300;
+    flex: 1;
 }
 
 .teaser .wrapper {
@@ -131,7 +132,7 @@
 }
 
 .contact_prompt {
-    min-width:80%; 
+    min-width:80%;
     margin-top:0.6em;
 }
 
@@ -200,39 +201,39 @@
 
 /* Responsive ----------------------------------------- */
 
-@media all and (max-width: 880px) { 
-    
+@media all and (max-width: 880px) {
+
     .teaser {
        background-position: center top;
     }
-    
+
     .teaser--home .teaser-copy {
         padding: 0;
     }
-    
+
     .teaser-copy {
         font-size: 19px;
     }
-    
+
     .teaser-cta {
         font-size: 19px;
     }
-    
+
     .teaser-bar {
         margin-top: 1em;
     }
-    
+
     .teaser-button {
         margin-top: 0;
     }
-    
+
     .teaser-form {
         padding: 1em;
         border: none;
         border-radius: .5em;
         text-align: left;
     }
-    
+
     .teaser-form .title-xx {
         font-size: 1.2em;
         text-align: left;

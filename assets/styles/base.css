@@ -6,6 +6,9 @@ html {
     color: hsl(0,0%,25%);
     /*font: 13px/1.231 'Gotham A', 'Gotham B', sans-serif;*/
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
@@ -17,12 +20,25 @@ body {
     background-color: #fff; /* Fixes resizing header gap glitch in FF */
     /* fixed nav */
     margin-top: 67px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 @media screen and (min-width: 1041px) {
     body {
         margin-top: 64px;
     }
+}
+
+main {
+    /*flex: 1;*/
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 
@@ -68,7 +84,8 @@ hr {
 
 h1,
 .title,
-.title-x {
+.title-x,
+.alpha {
     font-size: 2.8125em;
     line-height: 1.066666666em;
     margin-top: 1.06666667em;
@@ -80,7 +97,8 @@ h1,
 
 h2,
 .sub-title,
-.title-xx {
+.title-xx,
+.beta {
     font-size: 2em;
     line-height: 1.5em;
     margin-top: 1.5em;
@@ -91,7 +109,8 @@ h2,
 }
 
 h3,
-.title-xxx {
+.title-xxx,
+.gamma {
     font-size: 1.4375em;
     line-height: 1.043478261em;
     margin-top: 1.04347826em;
@@ -101,7 +120,8 @@ h3,
     /*line-height: 1.2;*/
 }
 
-h4 {
+h4,
+.delta {
     font-size: 1em;
     line-height: 1.5em;
     margin-top: 1.5em;
@@ -138,6 +158,40 @@ blockquote,
     color: hsl(0, 0%, 60%);
 }
 
+.subtitle {
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+/* $fix - lets just make one title class */
+
+.section-title {
+    margin-top: 0;
+}
+
+/****************
+
+Helpers
+
+****************/
+
+.center {
+    text-align: center;
+}
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: '';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
 
 @media all and (max-width: 700px) {
     .title-x {
@@ -154,19 +208,31 @@ blockquote,
     }
 }
 
+/****************
+
+Colors
+
+*****************/
+
+.bg-grey {
+    background: rgba(0,0,0,.1);
+}
+
 
 
 /* Sections ----------------------------------------- */
 
 section {
     position: relative;
-    padding: 60px 40px;
+    padding: 6em 40px;
 }
 
 
 .wrapper {
     position: relative;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 30px;
     /*max-width: 960px;*/
     margin: 0 auto;
     /*font-size: 14px;*/
@@ -514,6 +580,19 @@ section {
     margin: 0 10px 6px 0;
     width: 56px;
     border-radius: 28px;
+}
+
+/********************
+
+Title
+
+********************/
+
+.title-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 6em;
 }
 
 
