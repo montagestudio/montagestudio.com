@@ -229,14 +229,12 @@ section {
 
 
 .wrapper {
+    box-sizing: border-box;
     position: relative;
     width: 100%;
     max-width: 1080px;
     padding: 0 30px;
-    /*max-width: 960px;*/
     margin: 0 auto;
-    /*font-size: 14px;*/
-    /*line-height: 1.5;*/
 }
 
 

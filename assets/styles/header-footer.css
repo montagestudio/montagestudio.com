@@ -17,6 +17,7 @@
 }
 
 .header-container {
+    max-width: 1080px;
     position: relative;
     margin: 0 auto;
 }
@@ -361,11 +362,5 @@
         position: relative;
     }
 
-}
-
-@media screen and (min-width: 1041px) {
-    .header-container {
-        max-width: 960px;
-    }
 }
 

@@ -109,23 +109,24 @@ body.modal-is-active {
 /* Gallery ---------------------------------------------------------------------------------- */
 
 .gallery {
-    background-color: #8F8F8F;
-    color: #fff;
+    background-color: #555;
+    color: #E6E6E6;
     font-weight: 300;
 }
 
 .gallery .wrapper {
     text-shadow: none;
+    max-width: 1400px;
 }
 
 /* Global */
 
 a {
-    color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.3);
     font-weight: 400;
 }
 
-a:hover { color: rgba(0,0,0,1); }
+a:hover { color: rgba(255,255,255,.5); }
 
 /* ---- */
 
@@ -192,6 +193,19 @@ a:hover { color: rgba(0,0,0,1); }
     border-color: hsl(200,100%,30%);
 }
 
+.gallery-thumb:after {
+    content: '';
+    background-image: url(../images/gallery/icon_responsive-1.png);
+    background-size: cover;
+    position: absolute;
+    bottom: -20px;
+    right:  -20px;
+    width: 52px;
+    height: 52px;
+}
+
+
+/* gradient overlay */
 .gallery-thumb:before {
     content: "";
     position: absolute;
@@ -232,26 +246,19 @@ a:hover { color: rgba(0,0,0,1); }
 /* Gallery Logo */
 
 .gallery-item-logo {
-    background: #FFF;
+    /*background: #FFF;*/
+    margin-top: 6px;
     float: left;
     margin-right: 1em;
-    /*margin-bottom: 1em;*/
+    margin-bottom: .5em;
     display: inline-block;
 }
 
-.gallery-item-logo-2 {
-    background: #FFF;
-    display: inline-block;
-    margin-bottom: 1em;
-}
-
-.gallery-item-logo img,
-.gallery-item-logo-2 img {
+.gallery-item-logo img {
     display: block;
-    /*height: 2em;*/
     max-width: 8em;
     max-height: 4em;
-    padding: .75em 1em;
+    /*padding: .75em 1em;*/
 }
 
 /* Gallery Info --------------------------- */
@@ -346,7 +353,7 @@ svg {
 @media all and (max-width: 700px) {
 
     .gallery {
-        background: #8F8F8F url(../images/gallery/bg-small.jpg) no-repeat center top;
+        /*background: #8F8F8F url(../images/gallery/bg-small.jpg) no-repeat center top;*/
         background-size: 100% auto;
     }
 
@@ -356,7 +363,7 @@ svg {
 
 }
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 701px) {
     .gallery-list {
         margin-right: -2em;
     }
@@ -378,7 +385,7 @@ svg {
 @media all and (min-width: 1001px) {
 
     .gallery {
-        background: #8F8F8F url(../images/gallery/bg.jpg) no-repeat center center;
+        /*background: #8F8F8F url(../images/gallery/bg-dark.jpg) no-repeat center center;*/
         background-size: cover;
     }
 
