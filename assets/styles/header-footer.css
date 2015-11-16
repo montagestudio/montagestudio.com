@@ -201,22 +201,20 @@
 
 /* Sitemap */
 
+/* Sitemap */
+
 .sitemap {
     list-style: none;
-    margin: 0 0 0 250px;
+    margin: 0 0 0 170px;
     padding: 0;
     font-size: 0.9em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .sitemap li {
     display: inline-block;
-    /*margin: 0 2em;*/
+    margin: 0 2em;
     vertical-align: top;
     text-align: left;
-    flex: 1 0 150px;
 }
 
 .sitemap a {
@@ -283,11 +281,6 @@
 }
 
 @media all and (min-width: 701px) {
-
-    .sitemap {
-        /*display: block;*/
-        flex-wrap: nowrap;
-    }
 
     .footer {
         background: #181724 url(http://staging.montagestudio.com/assets/images/bg-footer.jpg) no-repeat top center;
