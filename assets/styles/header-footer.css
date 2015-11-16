@@ -295,10 +295,6 @@
         position: relative;
     }
 
-    section {
-        padding: 20px;
-    }
-
     .footer {
         background: #181724 url(http://staging.montagestudio.com/assets/images/bg-footer--vertical.jpg) no-repeat top center;
         background-size: 100% auto;
