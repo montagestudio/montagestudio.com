@@ -109,10 +109,27 @@ body.modal-is-active {
 /* Gallery ---------------------------------------------------------------------------------- */
 
 .gallery {
-    background-color: #555;
+    position: relative;
     color: #E6E6E6;
     font-weight: 300;
+    background-image: linear-gradient(rgba(55,55,55,.5), rgba(85,85,85,1) 50%);
 }
+
+main {
+    background-color: #555;
+    background-image: url(../images/gallery/gallery-bg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+/*.gallery:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1200px;background-image: linear-gradient(rgba(85,85,85,0), rgba(85,85,85,1) 50%);
+    width: 100%;
+
+}*/
 
 .gallery .wrapper {
     text-shadow: none;
@@ -122,7 +139,7 @@ body.modal-is-active {
 /* Global */
 
 a {
-    color: rgba(255,255,255,.3);
+    color: #999;
     font-weight: 400;
 }
 
@@ -160,6 +177,7 @@ a:hover { color: rgba(255,255,255,.5); }
 
 /* List --------------------------- */
 
+.gallery-list-2,
 .gallery-list {
     list-style: none;
     margin: 0;
@@ -168,6 +186,7 @@ a:hover { color: rgba(255,255,255,.5); }
     /*text-align: center;*/
 }
 
+.gallery-item-1,
 .gallery-item {
     display: block;
     /*margin: 4em auto;*/
@@ -178,6 +197,7 @@ a:hover { color: rgba(255,255,255,.5); }
 
 /* Gallery Thumbs --------------------------- */
 
+.gallery-thumb-2,
 .gallery-thumb {
     display: block;
     position: relative;
@@ -215,6 +235,7 @@ a:hover { color: rgba(255,255,255,.5); }
 }
 
 .gallery-img,
+.gallery-img-2,
 .gallery-gif {
     display: block;
     width: 100%;
@@ -246,12 +267,14 @@ a:hover { color: rgba(255,255,255,.5); }
 /* Gallery Logo */
 
 .gallery-item-logo {
+    display: inline-block;
+    /*display: none;*/
     /*background: #FFF;*/
     margin-top: 6px;
     float: left;
     margin-right: 1em;
     margin-bottom: .5em;
-    display: inline-block;
+
 }
 
 .gallery-item-logo img {
@@ -262,7 +285,6 @@ a:hover { color: rgba(255,255,255,.5); }
 }
 
 /* Gallery Info --------------------------- */
-
 
 .gallery-description {
     margin-top: 0;
@@ -317,11 +339,16 @@ a:hover { color: rgba(255,255,255,.5); }
 
 /* Gallery Note */
 
+#note {
+    background: #FFF;
+}
+
 .gallery-note {
     max-width: 900px;
     margin: 0 auto;
     /*font-size: 14px;*/
     line-height: 1.5;
+
 }
 
 /* award */
@@ -346,6 +373,100 @@ svg {
     align-self: center;
 }
 
+/* Gallery 2*/
+
+.intro.intro-2 {
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.gallery-item-2 {
+    margin-bottom: 4em;
+}
+
+.gallery-list-2 {
+    margin-right: -4em;
+}
+
+.gallery-media,
+.gallery-info-2 {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding-right: 4em;
+}
+
+.gallery-info-2 {
+    position: relative;
+}
+
+.gallery-info-2 h3 {
+    margin-top: -.1em;
+}
+
+.gallery-button-2 {
+    position: absolute;
+    top: 0;
+    right: 4em;
+}
+
+.gallery-item-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 6em;
+}
+
+.logo {
+    max-width: 150px;
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+.responsive-icon {
+    margin-bottom: 1em;
+}
+
+.responsive-icon img {
+    width: auto;
+    margin-right: 2px;
+    max-height: 30px;
+    display: inline-block;
+}
+
+.icon-laptop {
+    height: 30px;
+}
+
+.icon-tablet {
+    height: 30px;
+}
+
+.icon-phone {
+    margin-left: 2px;
+    height: 24px;
+}
+
+.icon-watch {
+    margin-left: 2px;
+    height: 24px;
+}
+
 
 
 /* Responsive Gallery ----------------------------------------- */
@@ -354,7 +475,7 @@ svg {
 
     .gallery {
         /*background: #8F8F8F url(../images/gallery/bg-small.jpg) no-repeat center top;*/
-        background-size: 100% auto;
+        /*background-size: 100% auto;*/
     }
 
     .gallery-item {
@@ -386,7 +507,7 @@ svg {
 
     .gallery {
         /*background: #8F8F8F url(../images/gallery/bg-dark.jpg) no-repeat center center;*/
-        background-size: cover;
+        /*background-size: cover;*/
     }
 
     .gallery .intro,
