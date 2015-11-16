@@ -120,8 +120,14 @@ body.modal-is-active {
 main {
     background-color: #555;
     background-image: url(../images/gallery/gallery-bg.jpg);
-    background-size: 100% auto;
+    background-size: 1200px auto;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        background-size: 100% auto;
+    }
 }
 
 /*.gallery:before {
@@ -177,7 +183,7 @@ main {
 
     .logos .logo {
         padding: 1em 2em;
-        max-width: 160px;
+        max-width: 140px;
     }
 }
 

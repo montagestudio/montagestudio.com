@@ -5,6 +5,7 @@
 }
 
 .company .wrapper {
+    box-sizing: border-box;
     background-color: hsla(0,0%,100%,.85);
     padding: 2em;
 }
@@ -16,12 +17,14 @@
 }
 
 .company-investor {
-    margin: 1em 3em 1em 0;
+    display: block;
+    margin-bottom: 2em;
     vertical-align: middle;
 }
 
 .company-investor--elevation {
     width: 300px;
+    max-width: 100%;
 }
 
 .company-investor--floodgate {
@@ -30,7 +33,7 @@
 
 .company-logo {
     width: 120px;
-    margin: 0 20px 20px 0;
+    /*margin: 0 20px 20px 0;*/
 }
 
 @media all and (min-width: 400px) {
