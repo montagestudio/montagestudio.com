@@ -2,7 +2,6 @@
 
 body.modal-is-active {
     overflow: hidden;
-    position: fixed;
     width: 100%;
 }
 
@@ -307,15 +306,12 @@ a:hover { color: rgba(255,255,255,.5); }
     }
 
     .gallery-list { margin-right: -4em; }
-
-    /*.gallery-item--small {
-        width: 50%;
-    }*/
 }
 
 /* Gallery Thumbs --------------------------- */
 
 .gallery-thumb {
+    cursor: pointer;
     display: block;
     position: relative;
     border: 3px solid hsl(0, 100%, 100%);
