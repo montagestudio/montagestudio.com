@@ -6,8 +6,12 @@ html {
     color: hsl(0,0%,25%);
     /*font: 13px/1.231 'Gotham A', 'Gotham B', sans-serif;*/
     background-color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
 }
 
@@ -20,9 +24,15 @@ body {
     background-color: #fff; /* Fixes resizing header gap glitch in FF */
     /* fixed nav */
     margin-top: 67px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 @media screen and (min-width: 1041px) {
@@ -36,9 +46,15 @@ main {
 }
 
 main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 
@@ -374,10 +390,6 @@ section {
     border-bottom: 1px solid hsl(0,0%,85%);
     text-align: center;
     background-color: hsl(0,0%,88%);
-    background-image: -webkit-linear-gradient(top, hsl(0,0%,90%), hsl(0,0%,86%) );
-    background-image:    -moz-linear-gradient(top, hsl(0,0%,90%), hsl(0,0%,86%) );
-    background-image:     -ms-linear-gradient(top, hsl(0,0%,90%), hsl(0,0%,86%) );
-    background-image:      -o-linear-gradient(top, hsl(0,0%,90%), hsl(0,0%,86%) );
     background-image:         linear-gradient(top, hsl(0,0%,90%), hsl(0,0%,86%) );
 }
 
@@ -471,7 +483,6 @@ section {
 .form textarea,
 .form select[multiple] {
     width: 60%;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 0.6em;
     border-radius: 4px;
