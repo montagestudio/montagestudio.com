@@ -1,109 +1,4 @@
-/* Video Overlay ---------------------------------------------------------------------------------- */
 
-body.modal-is-active {
-    overflow: hidden;
-    width: 100%;
-}
-
-.video-overlay {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.9);
-    z-index: 1;
-    transition: all .5s;
-    -webkit-transform: scale(.7);
-            transform: scale(.7);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal-is-active .video-overlay {
-    visibility: visible;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.video-container {
-    max-width: 800px;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.video {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-    background: black;
-    transition: all .25s;
-    transition-delay: .5s;
-}
-
-.modal-is-active .video {
-    opacity: 1;
-}
-
-.video iframe,
-.video object,
-.video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-.close {
-    position: absolute;
-    box-sizing: border-box;
-    background: none;
-    -webkit-appearance: none;
-    padding: 0;
-    top:    20px;
-    right:  20px;
-    font-size: 1.5em;
-    color: #FFF;
-    border: .2em solid currentColor;
-    height: 2em;
-    width:  2em;
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: .7;
-    transition: opacity .2s;
-    z-index: 2;
-}
-
-
-.close:hover  {opacity: 1;}
-.close:active {opacity: 1; outline: none;}
-
-.close:before,
-.close:after {
-    content: '';
-    position: absolute;
-    background: currentColor;
-    height: .2em;
-    left:  .2em;
-    right: .2em;
-    margin-top: -.1em;
-}
-
-.close:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
-.close:after  { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
 /* Gallery ---------------------------------------------------------------------------------- */
 
@@ -279,7 +174,7 @@ a:hover { color: rgba(255,255,255,.5); }
     margin-bottom: 2em;
 }
 
-.gallery-info h3 {
+.gallery-item h3 {
     margin-top: -.1em;
 }
 
@@ -298,8 +193,7 @@ a:hover { color: rgba(255,255,255,.5); }
     }
 
     .gallery-list           { margin-right: -2em; }
-    .gallery-item           { margin-bottom: 4em; }
-    .gallery-thumb          { margin-bottom: 2em; }
+    .gallery-item           { margin-bottom: 6em; width: 100%; clear:both;}
     .gallery-description    { margin-bottom: 2em; }
 
 
@@ -497,7 +391,173 @@ svg {
             align-self: center;
 }
 
-/* --------- */
+/* 2 col item */
+
+@media screen and (min-width: 768px) {
+    .gallery-item--2col {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding-right: 4em;
+        clear: none;
+    }
+
+    .gallery-item--2col .gallery-media {
+        width: 100%;
+        padding-right: 2em;
+    }
+
+    .gallery-item--2col .gallery-description {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .gallery-item__header {
+        display: flex;
+        margin-bottom: 2em;
+    }
+
+    .gallery-item--2col .gallery-media {
+        margin-bottom: 0;
+    }
+
+    .gallery-item--2col .gallery-item__titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .gallery-item--2col h4 {
+        margin-top: 0;
+    }
+
+    .gallery-item--2col .responsive-icons {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 0;
+    }
+
+    .gallery-item--2col .responsive-icons img {
+        margin-right: 4px;
+    }
+
+    .gallery-item--2col .gallery-media {
+        width: 55%;
+        padding-right: 2em;
+    }
+}
+
+
+
+/* Video Overlay ---------------------------------------------------------------------------------- */
+
+body.modal-is-active {
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.9);
+    z-index: 1;
+    transition: all .5s;
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-is-active .video-overlay {
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.video-container {
+    max-width: 800px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.video {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    background: black;
+    transition: all .25s;
+    transition-delay: .5s;
+}
+
+.modal-is-active .video {
+    opacity: 1;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.close {
+    position: absolute;
+    box-sizing: border-box;
+    background: none;
+    -webkit-appearance: none;
+    padding: 0;
+    top:    20px;
+    right:  20px;
+    font-size: 1.5em;
+    color: #FFF;
+    border: .2em solid currentColor;
+    height: 2em;
+    width:  2em;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity .2s;
+    z-index: 2;
+}
+
+
+.close:hover  {opacity: 1;}
+.close:active {opacity: 1; outline: none;}
+
+.close:before,
+.close:after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    height: .2em;
+    left:  .2em;
+    right: .2em;
+    margin-top: -.1em;
+}
+
+.close:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.close:after  { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
 
 
