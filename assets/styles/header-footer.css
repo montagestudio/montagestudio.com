@@ -8,7 +8,7 @@
 .header {
     padding: 0px 40px;
     text-align: left;
-    background-color: #333; /* should make it scroll faster */
+    background-color: #f47d31; /* should make it scroll faster */
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@
     position: absolute;
     top: 10px;
     height: 40px;
-    background-image: url(http://staging.montagestudio.com/assets/images/logo-header.png);
+    background-image: url(http://staging.montagestudio.com/assets/images/k-logo-header.png);
     color: transparent;
     text-shadow: none;
     width: 140px;
@@ -250,7 +250,7 @@
     height: 100px;
     left: 0;
     top: 5px;
-    background: url(http://staging.montagestudio.com/assets/images/logo-footer.png) no-repeat left top;
+    background: url(http://staging.montagestudio.com/assets/images/k-logo-footer.png) no-repeat left top;
     background-size: 100% auto;
 }
 
