@@ -65,7 +65,7 @@
 
 .nav-item:hover {
     color: hsl(0,0%,100%);
-    background-color: hsla(0, 100%, 100%, 0.06);
+    background-color: hsla(0, 0%, 15%, 0.69); /* hsla(0, 100%, 100%, 0.06); */
 }
 
 .nav-item:active,
@@ -87,7 +87,7 @@
 }
 
 .nav-item--teaser:hover {
-    background-color: hsla(0, 0%, 15%, 0.69); /* Original Color = hsl(204, 65%, 60%); */
+    background-color: hsl(204, 65%, 60%);
 }
 
 .nav-item--teaser:active,
