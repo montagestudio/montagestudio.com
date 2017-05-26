@@ -8,7 +8,7 @@
 .header {
     padding: 0px 40px;
     text-align: left;
-    background-color: #f47d31; /* should make it scroll faster */
+    background-color: #fff; /* should make it scroll faster */
     position: fixed;
     top: 0;
     left: 0;
@@ -83,11 +83,11 @@
     top: 0;
     right: 0;
     color: #fff;
-    background: #212121 linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)); /* original color = #479dd8 */
+    background: #479dd8 linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)); 
 }
 
 .nav-item--teaser:hover {
-    background-color: hsl(204, 65%, 60%);
+    background-color: hsla(0, 0%, 15%, 0.69); /* Original Color = hsl(204, 65%, 60%); */
 }
 
 .nav-item--teaser:active,
