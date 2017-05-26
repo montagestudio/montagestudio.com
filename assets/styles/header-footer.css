@@ -59,7 +59,7 @@
     font-size: 15px;
     margin: 0;
     padding: 20px 15px;
-    color: hsla(0, 0%, 70%, 1);
+    color: #212121 /* original color = hsla(0, 0%, 70%, 1); */
     text-decoration: none;
 }
 
@@ -83,7 +83,7 @@
     top: 0;
     right: 0;
     color: #fff;
-    background: #479dd8 linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    background: #212121 linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)); /* original color = #479dd8 */
 }
 
 .nav-item--teaser:hover {
